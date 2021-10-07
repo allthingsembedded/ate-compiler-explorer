@@ -5,7 +5,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: madduci/compiler-explorer:latest
+    image: javiervarez/ate_ce
     container_name: compiler-explorer
     ports:
       - 10240:10240
@@ -14,5 +14,5 @@ services:
     restart: on-failure
     stop_grace_period: 1m30s
 
-networks: 
+networks:
   ce_network:
